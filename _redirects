@@ -1,0 +1,94 @@
+###############################################################################
+# blog.komar.be → komar.blog  Redirect Map
+# Deploy this file to the root of your Cloudflare Pages site.
+# All redirects are 301 (Moved Permanently).
+###############################################################################
+
+###############################################################################
+# HOMEPAGE
+###############################################################################
+
+/  https://komar.blog/  301
+
+###############################################################################
+# POSTS — direct slug match (14 posts)
+###############################################################################
+
+/9999-in-1-reloaded-part-1/                            https://komar.blog/posts/9999-in-1-reloaded-part-1/                            301
+/9999-in-1-reloaded-part-2/                            https://komar.blog/posts/9999-in-1-reloaded-part-2/                            301
+/burning-ship/                                         https://komar.blog/posts/burning-ship/                                         301
+/gh60-evolution/                                       https://komar.blog/posts/gh60-evolution/                                       301
+/gh60-rev-c-plain-edition-is-out/                      https://komar.blog/posts/gh60-rev-c-plain-edition-is-out/                      301
+/how-to-make-a-keyboard-the-matrix/                    https://komar.blog/posts/how-to-make-a-keyboard-the-matrix/                    301
+/introducing-the-gh60-keyboard-project/                https://komar.blog/posts/introducing-the-gh60-keyboard-project/                301
+/led-strip-dimmer-and-potting-attempt/                 https://komar.blog/posts/led-strip-dimmer-and-potting-attempt/                 301
+/logged-in-through-ssh/                                https://komar.blog/posts/logged-in-through-ssh/                                301
+/making-my-own-pendrive-kind-of/                       https://komar.blog/posts/making-my-own-pendrive-kind-of/                       301
+/making-pcb-artwork-in-kicad/                          https://komar.blog/posts/making-pcb-artwork-in-kicad/                          301
+/my-way-of-handling-pdfs-in-xmonad/                    https://komar.blog/posts/my-way-of-handling-pdfs-in-xmonad/                    301
+/using-atmels-dfu-bootloader-abi-on-atmega32u4-in-avr-gcc/  https://komar.blog/posts/using-atmels-dfu-bootloader-abi-on-atmega32u4-in-avr-gcc/  301
+/wang-724-teardown/                                    https://komar.blog/posts/wang-724-teardown/                                    301
+
+###############################################################################
+# POSTS — renamed slug
+###############################################################################
+
+/60-cherry-mx-8100-mod/  https://komar.blog/posts/cherry-g80-8100-60-percent-keyboard/  301
+
+###############################################################################
+# PROJECTS
+###############################################################################
+
+/projects/                                          https://komar.blog/projects/                                          301
+/projects/gh60-programmable-keyboard/               https://komar.blog/projects/gh60-programmable-keyboard/               301
+/projects/project-atmel-dfu-bootloader-abi-wrapper/ https://komar.blog/projects/atmel-dfu-bootloader-abi-wrapper/         301
+/projects/how-to-make-a-keyboard/                   https://komar.blog/posts/how-to-make-a-keyboard-the-matrix/           301
+
+###############################################################################
+# PORTFOLIO — not imported → home
+###############################################################################
+
+/portfolio/                                    https://komar.blog/  301
+/portfolio/techkeys-us-business-card/           https://komar.blog/  301
+/portfolio/techkeys-us-programmable-business-card/  https://komar.blog/  301
+
+###############################################################################
+# ABOUT — not imported → home
+###############################################################################
+
+/about/  https://komar.blog/  301
+
+###############################################################################
+# CATEGORIES → TAGS
+###############################################################################
+
+/category/art/                          https://komar.blog/tags/art/          301
+/category/electronics/                  https://komar.blog/tags/electronics/  301
+/category/electronics/kicad-electronics/  https://komar.blog/tags/kicad/      301
+/category/keyboards/                    https://komar.blog/tags/keyboards/    301
+/category/kicad/                        https://komar.blog/tags/kicad/        301
+/category/programming/                  https://komar.blog/tags/programming/  301
+/category/shell-scripting/              https://komar.blog/tags/              301
+/category/xmonad/                       https://komar.blog/tags/xmonad/       301
+
+###############################################################################
+# WORDPRESS META — catch-all patterns
+###############################################################################
+
+/feed/             https://komar.blog/atom.xml  301
+/comments/feed/    https://komar.blog/atom.xml  301
+/category/         https://komar.blog/tags/      301
+/author/*          https://komar.blog/           301
+/tag/*             https://komar.blog/tags/:splat  301
+/page/*            https://komar.blog/posts/     301
+
+###############################################################################
+# WORDPRESS INTERNALS — send away
+###############################################################################
+
+/wp-content/*   https://komar.blog/  301
+/wp-includes/*  https://komar.blog/  301
+/wp-json/*      https://komar.blog/  301
+/xmlrpc.php     https://komar.blog/  301
+/wp-login.php   https://komar.blog/  301
+/wp-admin/*     https://komar.blog/  301
